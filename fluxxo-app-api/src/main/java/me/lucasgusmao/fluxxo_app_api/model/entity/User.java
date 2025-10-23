@@ -27,6 +27,8 @@ public class User {
     private String email;
     @Column(name = "password", nullable = false, length = 120)
     private String password;
+    @Column(name = "image_url")
+    private String imageUrl;
     @Column(name = "is_active")
     private Boolean isActive;
     @Column(name = "activation_token", length = 10)
@@ -37,6 +39,7 @@ public class User {
     private LocalDateTime createdAt;
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
+
 
     @PrePersist
     public void prePersist(){
