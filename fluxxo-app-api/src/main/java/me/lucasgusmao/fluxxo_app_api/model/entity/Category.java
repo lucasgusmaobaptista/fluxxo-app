@@ -38,7 +38,7 @@ public class Category {
     @Column(name = "color", length = 7)
     private String color;
 
-    @Column(name = "user_id")
+    @JoinColumn(name = "user_id")
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
 
