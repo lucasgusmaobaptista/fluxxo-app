@@ -17,7 +17,7 @@ public record TransactionRequestDTO(
         TransactionStatus status,
         PaymentMethod paymentMethod,
         @NotNull(message = "Esse campo é obrigatório")
-        BigDecimal bigDecimal,
+        BigDecimal amount,
         UUID categoryId
 ) {
 }

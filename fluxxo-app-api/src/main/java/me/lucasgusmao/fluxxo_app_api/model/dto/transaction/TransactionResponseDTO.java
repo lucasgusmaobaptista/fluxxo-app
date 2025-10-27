@@ -1,7 +1,5 @@
 package me.lucasgusmao.fluxxo_app_api.model.dto.transaction;
 
-import me.lucasgusmao.fluxxo_app_api.model.entity.Category;
-import me.lucasgusmao.fluxxo_app_api.model.entity.User;
 import me.lucasgusmao.fluxxo_app_api.model.enums.PaymentMethod;
 import me.lucasgusmao.fluxxo_app_api.model.enums.TransactionStatus;
 
