@@ -30,7 +30,7 @@ public class Transaction {
     @Column(name = "notes")
     private String notes;
 
-    @Column(name = "status", nullable = false)
+    @Column(name = "status")
     private TransactionStatus status;
 
     @Column(name = "payment_method")
