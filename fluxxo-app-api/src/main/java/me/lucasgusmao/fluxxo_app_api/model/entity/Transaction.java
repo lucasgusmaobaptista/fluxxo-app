@@ -39,11 +39,11 @@ public class Transaction {
     @Column(name = "amount", nullable = false)
     private BigDecimal amount;
 
-    @Column(name = "category_id")
+    @JoinColumn(name = "category_id")
     @ManyToOne(fetch = FetchType.LAZY)
     private Category category;
 
-    @Column(name = "user_id")
+    @JoinColumn(name = "user_id")
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
 
