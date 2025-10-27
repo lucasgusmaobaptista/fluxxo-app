@@ -27,13 +27,13 @@ public class Transaction {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "notes", nullable = false)
+    @Column(name = "notes")
     private String notes;
 
     @Column(name = "status", nullable = false)
     private TransactionStatus status;
 
-    @Column(name = "payment_method", nullable = false)
+    @Column(name = "payment_method")
     private PaymentMethod paymentMethod;
 
     @Column(name = "amount", nullable = false)
