@@ -14,7 +14,7 @@ public record CategoryResponseDTO(
         String type,
         String color,
         List<Transaction> transactions,
-        User userId,
+        User user,
         boolean isDefault,
         LocalDateTime createdAt,
         LocalDateTime updatedAt
