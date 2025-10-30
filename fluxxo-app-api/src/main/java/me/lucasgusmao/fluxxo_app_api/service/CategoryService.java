@@ -9,6 +9,9 @@ import me.lucasgusmao.fluxxo_app_api.model.entity.Category;
 import me.lucasgusmao.fluxxo_app_api.repository.CategoryRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.UUID;
+
 @Service
 @RequiredArgsConstructor
 public class CategoryService {
@@ -24,6 +27,12 @@ public class CategoryService {
         }
         category = repository.save(category);
         return mapper.toDTO(category);
+    }
+
+    public List<CategoryResponseDTO> getAll(UUID userId) {
+        //TODO get current user and set to category
+        List<Category> categories = repository.findByUserId(userId);
+        return categories.stream().map(mapper::toDTO).toList();
     }
 }
 
